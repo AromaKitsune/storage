@@ -1,0 +1,81 @@
+# uBlock Origin filters list for mobile browsers
+
+# Remove garbage from Google search
+##############################
+
+! People also ask/search for, Related searches (static,popup,images)
+www.google.com##.ouy7Mc
+www.google.com##.gg4UKb
+www.google.com##.LRn4mf
+
+! Short videos
+www.google.com##.adDDi
+www.google.com##.Ph8vHd
+
+! Refine this search
+www.google.com##.abkl6
+
+! Did you mean x
+www.google.com##.gqLncc
+
+! Google consent, "before you continue"
+www.google.com##.HTjtHe
+www.google.com##body:style(overflow: auto !important;)
+
+! Broaden this search
+www.google.com##.hYVxKd
+
+! Images (on main section)
+www.google.com##.Lv2Cle
+
+! block key moments
+www.google.*##video-voyager .yob3kc, video-voyager .AonJHf
+
+# Misc
+##############################
+
+! Unsafe Sites
+||getintopc.com^
+||disqus.com^
+
+! Global
+*##.ad-zone-container
+*##.quote-sharing
+*##[src="/iprc_seized_banner.png"]
+
+! Hide strings
+! *##:xpath('//*[contains(translate(text(),"ELONMUSK","elonmusk"),"elon musk")]')
+*##:xpath('//*[contains(translate(text(),"ADBLOCK","adblock"),"adblock")]')
+*##:xpath('//*[contains(translate(text(),"ADBLOCK","adblock"),"ad block")]')
+*##:xpath('//*[contains(translate(text(),"ADBLOCK","adblock"),"ad-block")]')
+*##:xpath('//*[contains(translate(text(),"ADSBLOCK","adsblock"),"adsblock")]')
+*##:xpath('//*[contains(translate(text(),"ADSBLOCK","adsblock"),"ads block")]')
+*##:xpath('//*[contains(translate(text(),"ADSBLOCK","adsblock"),"ads-block")]')
+
+! Google login dialogs on various pages
+||accounts.google.com/gsi/*$xhr,script,3p
+
+! Speedtest - hide IP
+www.speedtest.net##.ispComponent > div > .result-data
+www.speedtest.net##.js-data-ip.result-data
+
+! APKMirror - eliminate annoyances
+www.apkmirror.com##.promotedApp.appRow
+www.apkmirror.com##.apkm-timed-slider
+www.apkmirror.com###description
+www.apkmirror.com##.tab-container
+www.apkmirror.com##.tab-buttons
+www.apkmirror.com##.apk-warning-panel
+www.apkmirror.com##.apk-detail-table
+www.apkmirror.com##.center > div > div
+www.apkmirror.com##.t-height
+
+! Remove donate banners
+archive.org###donate_banner
+en.wikipedia.org###siteNotice
+en.wikipedia.org###frb-inline
+
+! 2023-02-28 https://www.eurogamer.net
+www.eurogamer.net##.video_wrapper
+www.eurogamer.net##.collapsible.inlinead
+
