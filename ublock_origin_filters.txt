@@ -79,3 +79,4 @@ en.wikipedia.org###frb-inline
 www.eurogamer.net##.video_wrapper
 www.eurogamer.net##.collapsible.inlinead
 
+! :has-text(SomethingToBlacklist)
